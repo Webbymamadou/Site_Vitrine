@@ -1,7 +1,5 @@
 # IntelliRH - Système d'Intelligence des Gestions RH
 
-![Logo IntelliRH](Images/architecture_gigrh.png)
-
 ## 🚀 À propos du projet
 
 **IntelliRH** est une solution innovante destinée à réinventer la gestion des ressources humaines. Propulsée par l'intelligence artificielle, elle permet d'analyser, d'organiser et d'optimiser la gestion des employés en entreprise. Ce référentiel contient le **site vitrine** présentant l'architecture, les fonctionnalités clés et les avantages de ce système RH à grande échelle.
