@@ -1,11 +1,435 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Système d'Intelligence RH</title>
+  <link rel="stylesheet" href="style.css" />
+    <!-- Remix Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 <body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-icon"><i class="ri-brain-line"></i></span>
+      <span class="logo-text">IntelliRH</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#contexte">Contexte</a></li>
+      <li><a href="#solution">Solution</a></li>
+      <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+      <li><a href="#avantages">Avantages</a></li>
+      <li><a href="#vision">Vision</a></li>
+    </ul>
+    <button class="nav-cta" onclick="scrollToSection('solution')">Découvrir</button>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <i class="ri-menu-3-line"></i>
+    </button>
+  </nav>
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <i class="ri-sparkling-2-line"></i>
+        <span>Solutions Digital !!</span>
+      </div>
+      <h1 class="hero-title reveal">
+        Système d'Intelligence<br />
+        <span class="gradient-text">des Gestions RH</span>
+      </h1>
+      <p class="hero-subtitle reveal">
+        Une solution intelligente pour <strong>analyser</strong>, <strong>organiser</strong> et <strong>optimiser</strong> 
+        la gestion des employés en entreprise — propulsée par l'intelligence artificielle.
+      </p>
+      <div class="hero-actions reveal">
+        <button class="btn-primary" onclick="scrollToSection('contexte')">
+          <i class="ri-arrow-down-line"></i>
+          Découvrir le projet
+        </button>
+        <button class="btn-ghost" onclick="scrollToSection('fonctionnalites')">
+          <i class="ri-play-circle-line"></i>
+          Voir les fonctionnalités
+        </button>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-number">4</span>
+          <span class="stat-label">Membres d'équipe</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">5</span>
+          <span class="stat-label">Fonctionnalités</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">IA</span>
+          <span class="stat-label">Propulsé par</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="dashboard-mockup">
+        <div class="mock-header">
+          <div class="mock-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <span class="mock-title">IntelliRH Dashboard</span>
+        </div>
+        <div class="mock-body">
+          <div class="mock-card primary">
+            <i class="ri-group-line"></i>
+            <div>
+              <strong>247</strong>
+              <span>Employés actifs</span>
+            </div>
+          </div>
+          <div class="mock-card success">
+            <i class="ri-bar-chart-2-line"></i>
+            <div>
+              <strong>94%</strong>
+              <span>Performance</span>
+            </div>
+          </div>
+          <div class="mock-card warning">
+            <i class="ri-lightbulb-flash-line"></i>
+            <div>
+              <strong>12</strong>
+              <span>Recommandations IA</span>
+            </div>
+          </div>
+          <div class="mock-chart">
+            <div class="chart-bar" style="height:60%"></div>
+            <div class="chart-bar" style="height:80%"></div>
+            <div class="chart-bar" style="height:45%"></div>
+            <div class="chart-bar" style="height:90%"></div>
+            <div class="chart-bar" style="height:70%"></div>
+            <div class="chart-bar" style="height:85%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== CONTEXTE / PROBLÉMATIQUE ===== -->
+  <section class="section contexte" id="contexte">
+    <div class="container">
+      <div class="section-label reveal">
+        <i class="ri-error-warning-line"></i> Problématique
+      </div>
+      <h2 class="section-title reveal">
+        Pourquoi la gestion RH<br />traditionnelle est insuffisante ?
+      </h2>
+      <div class="problems-grid">
+        <div class="problem-card reveal">
+          <div class="problem-icon"><i class="ri-time-line"></i></div>
+          <h3>Processus lents</h3>
+          <p>La gestion manuelle des employés est chronophage et source d'erreurs fréquentes dans les grandes organisations.</p>
+        </div>
+        <div class="problem-card reveal">
+          <div class="problem-icon"><i class="ri-eye-off-line"></i></div>
+          <h3>Manque de visibilité</h3>
+          <p>Les responsables RH n'ont pas une vue claire et en temps réel de la performance et des besoins de leurs équipes.</p>
+        </div>
+        <div class="problem-card reveal">
+          <div class="problem-icon"><i class="ri-funds-line"></i></div>
+          <h3>Décisions non optimales</h3>
+          <p>Sans données structurées, les décisions de recrutement, formation et promotion sont souvent basées sur l'intuition.</p>
+        </div>
+        <div class="problem-card reveal">
+          <div class="problem-icon"><i class="ri-file-damage-line"></i></div>
+          <h3>Données dispersées</h3>
+          <p>Les informations RH sont éparpillées dans des fichiers Excel, e-mails et outils non connectés entre eux.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== SOLUTION ===== -->
+  <section class="section solution" id="solution">
+    <div class="container">
+      <div class="section-label reveal">
+        <i class="ri-rocket-line"></i> Notre Solution
+      </div>
+      <h2 class="section-title reveal">
+        Gestion Intelligence RH —<br />
+        <span class="gradient-text">Réinventer les ressources humaines</span>
+      </h2>
+      <p class="section-desc reveal">
+        Notre système exploite la puissance de l'intelligence artificielle pour transformer la façon dont 
+        les entreprises gèrent leurs talents. En centralisant, analysant et automatisant les processus RH, 
+        nous offrons une solution clé en main, intelligente et évolutive.
+      </p>
+      <div class="team-section reveal">
+        <h3 class="team-title"><i class="ri-team-line"></i> Notre Équipe de 4 Membres</h3>
+        <div class="team-grid">
+          <div class="team-card reveal">
+            <div class="team-info">
+              <strong>Mamadou Seck</strong>
+              <span>Chef de projet & Coordination</span>
+              <div class="team-tasks">
+                <span><i class="ri-task-line"></i> Planification</span>
+                <span><i class="ri-presentation-line"></i> Livrables</span>
+              </div>
+            </div>
+          </div>
+          <div class="team-card reveal">
+            <div class="team-info">
+              <strong>Samdi Jordan</strong>
+              <span>Développeur Frontend</span>
+              <div class="team-tasks">
+                <span><i class="ri-code-line"></i> Interface</span>
+                <span><i class="ri-palette-line"></i> Design UI</span>
+              </div>
+            </div>
+          </div>
+          <div class="team-card reveal">
+            <div class="team-info">
+              <strong>Ndeye Khoudia MBacke</strong>
+              <span>Développeur Backend</span>
+              <div class="team-tasks">
+                <span><i class="ri-database-2-line"></i> Base de données</span>
+                <span><i class="ri-server-line"></i> API</span>
+              </div>
+            </div>
+          </div>
+          <div class="team-card reveal">
+            <div class="team-info">
+              <strong>Mara Kollo Ndiaye</strong>
+              <span>Spécialiste IA & Contenu</span>
+              <div class="team-tasks">
+                <span><i class="ri-brain-line"></i> Modèles IA</span>
+                <span><i class="ri-file-text-line"></i> Documentation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== ARCHITECTURE ===== -->
+  <section class="section architecture" id="architecture">
+    <div class="container">
+  <div class="section-label reveal">
+    <i class="ri-layout-4-line"></i> Architecture
+  </div>
+  <h2 class="section-title reveal">Architecture du Système</h2>
+  <p class="section-desc reveal">
+    Une architecture modulaire pensée pour la performance, la sécurité et l'évolutivité de votre gestion RH.
+  </p>
+  <div class="arch-image-wrapper reveal" style="width: 100%;max-width: 100%;margin: 2.5rem auto 0;border-radius: 16px;overflow: hidden;border: 1px solid rgba(0,0,0,0.08);background: #f8f8f8;">
+    <img
+      src="Images/architecture_gigrh.png"
+      alt="Architecture du système IntelliRH"
+      style="display: block;width: 100%;height: auto;object-fit: contain;"
+    />
+  </div>
+</div>
+  </section>
+  <!-- ===== FONCTIONNALITÉS ===== -->
+  <section class="section fonctionnalites" id="fonctionnalites">
+    <div class="container">
+      <div class="section-label reveal">
+        <i class="ri-settings-4-line"></i>  Les Fonctionnalités du projet
+      </div>
+      <h2 class="section-title reveal">Fonctionnalités Principales</h2>
+      <div class="features-grid">
+  <div class="feature-card large reveal">
+    <div class="feature-icon"><i class="ri-bar-chart-grouped-line"></i></div>
+    <h3>Gestion des employés</h3>
+    <p>Centralisez les profils, contrats et historiques de vos collaborateurs. Suivez les évolutions de poste et gérez les équipes depuis un tableau de bord unique.</p>
+    <div class="feature-tag">Temps réel</div>
+  </div>
 
+  <div class="feature-card reveal">
+    <div class="feature-icon"><i class="ri-robot-line"></i></div>
+    <h3>Gestion des présences</h3>
+    <p>Suivez automatiquement les horaires, retards et absences. Générez des rapports de présence sans saisie manuelle.</p>
+    <div class="feature-tag">Gain de temps</div>
+  </div>
 
+  <div class="feature-card reveal">
+    <div class="feature-icon"><i class="ri-lightbulb-line"></i></div>
+    <h3>Gestion des congés</h3>
+    <p>Soumettez, approuvez et planifiez les congés en quelques clics. Visualisez les absences de l'équipe pour éviter les conflits de planning.</p>
+    <div class="feature-tag">Intelligence</div>
+  </div>
+
+  <div class="feature-card large reveal">
+    <div class="feature-icon"><i class="ri-pie-chart-2-line"></i></div>
+    <h3>Évaluation des performances</h3>
+    <p>Définissez des objectifs clairs, recueillez les feedbacks et pilotez les entretiens annuels. Identifiez les talents et accompagnez la montée en compétences.</p>
+    <div class="feature-tag">Décisionnel</div>
+  </div>
+
+  <div class="feature-card large reveal">
+    <div class="feature-icon"><i class="ri-pie-chart-2-line"></i></div>
+    <h3>Intelligence artificielle et aide à la décision</h3>
+    <p>Des recommandations intelligentes pour anticiper les besoins RH, prévenir le turnover et prendre de meilleures décisions basées sur vos données.</p>
+    <div class="feature-tag">Décisionnel</div>
+  </div>
+</div>
+    </div>
+  </section>
+  <!-- ===== CAS D'UTILISATION ===== -->
+  <section class="section usecases" id="usecases">
+    <div class="container">
+  <div class="section-label reveal">
+    <i class="ri-building-line"></i> Cas d'Utilisation
+  </div>
+  <h2 class="section-title reveal">Qui peut utiliser IntelliRH ?</h2>
+  <div class="use-grid">
+
+    <div class="use-card reveal">
+      <div class="use-visual">
+        <i class="ri-building-4-line"></i>
+      </div>
+      <div class="use-content">
+        <h3>PME & Grandes entreprises</h3>
+        <p>Structurez et automatisez votre gestion RH pour gagner en efficacité, réduire la charge administrative et piloter vos équipes avec précision.</p>
+        <ul>
+          <li><i class="ri-check-line"></i> Suivi des performances</li>
+          <li><i class="ri-check-line"></i> Gestion des congés et absences</li>
+          <li><i class="ri-check-line"></i> Évaluations et entretiens</li>
+        </ul>
+      </div>
+    </div>
+    <div class="use-card reveal">
+      <div class="use-visual">
+        <i class="ri-rocket-line"></i>
+      </div>
+      <div class="use-content">
+        <h3>Startups & Scale-ups</h3>
+        <p>Posez des bases RH solides dès le départ. IntelliRH grandit avec vous, de vos premières recrues jusqu'à vos premières centaines de collaborateurs.</p>
+        <ul>
+          <li><i class="ri-check-line"></i> Onboarding simplifié</li>
+          <li><i class="ri-check-line"></i> Suivi de la croissance des équipes</li>
+          <li><i class="ri-check-line"></i> Tableaux de bord en temps réel</li>
+        </ul>
+      </div>
+    </div>
+    <div class="use-card reveal">
+      <div class="use-visual">
+        <i class="ri-government-line"></i>
+      </div>
+      <div class="use-content">
+        <h3>Institutions & Organisations</h3>
+        <p>ONG, administrations et associations : gérez vos effectifs, bénévoles et agents avec des outils adaptés à vos contraintes et obligations.</p>
+        <ul>
+          <li><i class="ri-check-line"></i> Gestion multi-profils</li>
+          <li><i class="ri-check-line"></i> Traçabilité et conformité</li>
+          <li><i class="ri-check-line"></i> Rapports personnalisés</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+  <!-- ===== AVANTAGES ===== -->
+  <section class="section avantages" id="avantages">
+    <div class="container">
+  <div class="section-label reveal">
+    <i class="ri-trophy-line"></i> Avantages
+  </div>
+  <h2 class="section-title reveal">Pourquoi choisir IntelliRH ?</h2>
+  <div class="advantages-layout">
+
+    <div class="advantage-main reveal">
+      <div class="adv-icon"><i class="ri-timer-flash-line"></i></div>
+      <h3>Moins d'administratif, plus d'humain</h3>
+      <p>Automatisez les tâches répétitives — suivi des présences, gestion des congés, rappels d'évaluation — pour que vos équipes RH se concentrent sur l'essentiel.</p>
+      <div class="adv-progress">
+        <div class="progress-label">Réduction de la charge administrative</div>
+        <div class="progress-bar">
+          <div class="progress-fill" data-width="70"></div>
+        </div>
+        <span>70%</span>
+      </div>
+    </div>
+
+    <div class="advantages-secondary">
+      <div class="advantage-card reveal">
+        <div class="adv-icon small"><i class="ri-brain-line"></i></div>
+        <div>
+          <h4>Décisions basées sur les données</h4>
+          <p>Accédez à des indicateurs RH fiables en temps réel pour piloter vos effectifs avec clarté et objectivité.</p>
+        </div>
+      </div>
+      <div class="advantage-card reveal">
+        <div class="adv-icon small"><i class="ri-line-chart-line"></i></div>
+        <div>
+          <h4>Suivi des performances simplifié</h4>
+          <p>Fixez des objectifs, suivez les progrès et réalisez vos évaluations depuis une interface unique et intuitive.</p>
+        </div>
+      </div>
+      <div class="advantage-card reveal">
+        <div class="adv-icon small"><i class="ri-lock-password-line"></i></div>
+        <div>
+          <h4>Sécurité & confidentialité</h4>
+          <p>Les données de vos collaborateurs sont protégées avec des accès contrôlés par rôle et une gestion stricte des droits.</p>
+        </div>
+      </div>
+      <div class="advantage-card reveal">
+        <div class="adv-icon small"><i class="ri-user-star-line"></i></div>
+        <div>
+          <h4>Adapté à chaque organisation</h4>
+          <p>Paramétrez IntelliRH selon votre structure, vos processus et vos besoins, sans contrainte technique.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+  <!-- ===== VISION ===== -->
+  <section class="section vision" id="vision">
+    <div class="container">
+    <div class="vision-content">
+    <div class="section-label reveal light">
+      <i class="ri-rocket-2-line"></i> Vision & Objectif
+    </div>
+    <h2 class="section-title reveal light">
+      L'avenir des RH<br />
+      <span class="gradient-text-light">est intelligent</span>
+    </h2>
+    <p class="section-desc reveal light">
+      IntelliRH n'est pas qu'un outil de gestion — c'est un levier stratégique. 
+      Notre ambition : donner à chaque organisation, quelle que soit sa taille, 
+      les moyens de piloter ses ressources humaines avec intelligence et sérénité.
+    </p>
+    <div class="vision-pillars">
+      <div class="pillar reveal">
+        <div class="pillar-icon"><i class="ri-global-line"></i></div>
+        <h4>Une portée large</h4>
+        <p>Conçu pour s'adapter à toutes les structures, de la petite équipe à l'organisation multi-sites.</p>
+      </div>
+      <div class="pillar reveal">
+        <div class="pillar-icon"><i class="ri-flask-line"></i></div>
+        <h4>L'IA au service des RH</h4>
+        <p>Des algorithmes qui analysent, anticipent et suggèrent pour des décisions RH toujours plus pertinentes.</p>
+      </div>
+      <div class="pillar reveal">
+        <div class="pillar-icon"><i class="ri-refresh-line"></i></div>
+        <h4>Une plateforme évolutive</h4>
+        <p>Une architecture pensée pour grandir : nouveaux modules, nouvelles fonctionnalités, nouveaux usages.</p>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-icon"><i class="ri-brain-line"></i></span>
+          <span>IntelliRH</span>
+        </div>
+        <p>Système d'Intelligence des Gestions RH · Projet ISI 2026</p>
+        <p class="footer-module">Module : Atelier Créatif — Professeur :Samba B. KANE ·</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
